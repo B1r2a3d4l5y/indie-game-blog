@@ -15,11 +15,17 @@
     background-color: black;
     box-sizing: border-box;
 }
+.menu {
+    z-index :10001
+}
+
 
 .dropdown {
     display: inline-block;
     position: relative;
 }
+
+
 
 
 
@@ -29,10 +35,11 @@
     padding: 20px;
     left: 30px;
     font-size: 35px;
-    bottom: 100px;
+    top: 300px;
     border: none;
     text-decoration: none;
     color: white;
+    font-weight: bold;
 
 }
 
@@ -42,7 +49,9 @@
     min-width: 160px;
     box-shadow: rgb(0,0,0,0.2);
     z-index: 1;
-    text-align: center;
+
+
+
 
 
 }
@@ -81,11 +90,12 @@
     display: inline-block;
     position: relative;
     color: white;
-    margin-bottom: 200px;
-    margin-left: -100px;
+    margin-top: 600px;
+    margin-right: 150px;
     font-size: 35px;
     font-weight: bold;
     text-decoration: none;
+
 
 
 
@@ -94,7 +104,7 @@
 .logo {
     display: inline-block;
     position: relative;
-    bottom: 90px;
+    top: 290px;
     width: 200px;
     height: auto;
     right: 100px;
@@ -103,8 +113,8 @@
 .mail {
     display: inline-block;
     position: relative;
-    top: -100px;
-    left: -370px;
+    top: 300px;
+    right:  100px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -116,12 +126,12 @@
 
 .discord {
     display: inline-block;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: 300px;
     color: white;
-    font-size: 37px;
+    font-size: 35px;
     text-decoration: none;
-    right: 200px;
+    right: 100px;
 
 }
 
@@ -136,14 +146,14 @@
     top: 130px;
 
 }
-
+    
 .demo_video {
     display: inline-block;
     position: relative;
-    top: 40px;
-    right: 100px;
+    height: 100%;
     width: 100%;
-    height: auto;
+
+
 
 
 }
@@ -151,7 +161,7 @@
 .early {
     display: inline-block;
     position: relative;
-    top: 40px;
+    top: 50px;
     color: white;
     font-size: 100px;
     font-weight: bold;
@@ -412,26 +422,36 @@
     <div class="container-fluid">
         <div class="row">
             <nav class="menu nav navbar">
-               
-                
                 <div class="dropdown">
                     <a class="dropdown-link">About</a>
                     <div class="dropdown_content">
                         <a href="#">The Game</a>
                         <a href="#">The World</a>
                     </div>
-
+                
                 </div>
                 <a class="demo" href="#">Demo</a>
-                <a class="logo navbar navbar-brand" ><img class="img img-thumbnail" src="img/TD-LOGO.png" alt="logo"></a>
+                <a class="logo navbar navbar-brand"><img class="img img-thumbnail" src="img/TD-LOGO.png" alt="logo"></a>
                 <a class="mail">Mailing List</a>
                 <a class="discord">Discord</a>
-            </nav>
-            <div class="embed_responsive  embed_responsive16by9">
-                <video class="demo_video embed-responsive-item" controls>
-                    <source src="assests/Treacherous_Journeys_jXPK3vMwmy_Trim.mp4">
-                </video>
+                </nav>
+            
+            
+            <div class="video-container">
+                <div class="embed_responsive  embed_responsive16by9">
+                    <video class="demo_video embed-responsive-item" loop muted autoplay>
+                        <source src="assests/Treacherous_Journeys_jXPK3vMwmy_Trim.mp4">
+                       
+
             </div>
+        
+
+               
+            </video>
+        </div>
+          
+            </div>
+
             <section class="top-section col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 
                 <h2 class="early">Early Devolpment Action RPG</h2>
